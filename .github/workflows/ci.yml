@@ -1,7 +1,6 @@
 name: "Pull Request Labeler"
-on:
-  push:
-    branches: [main]
+on: pull_request: types: [ opened, synchronize, reopened ]
+
 
 jobs:
   triage:
