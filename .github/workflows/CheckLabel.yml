@@ -3,9 +3,9 @@ on:
   push:
     tags:
       - '*'
-    branch:
-      - [main]
 jobs:
+  Testing:
+    runs-on: ubuntu-latest
     steps:
       - name: Get branch names
         id: branch-name
